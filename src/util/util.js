@@ -149,8 +149,8 @@ export function JCMFormatDate(dateStr) {
   if (second < 10) {
     second = "0" + second;
   }
+  return `${hour}:${minute}:${second}`;
   // return `${year}/${month}/${day} ${hour}:${minute}:${second}`;
-  return `${year}/${month}/${day} ${hour}:${minute}:${second}`;
 }
 
 

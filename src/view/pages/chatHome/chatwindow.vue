@@ -1,4 +1,9 @@
 <template>
+<!-- <div style="height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;"> -->
   <div class="chat-window">
     <div class="top">
       <el-row style="height: 50px">
@@ -199,7 +204,7 @@
         <!--输入框-->
         <textarea
           id="textareaMsg"
-          :placeholder="$t('placeholder.question')"
+          :placeholder="$t('Enter a message...')"
           class="inputs"
           v-autoheight
           style="
@@ -230,6 +235,8 @@
       </div>
     </div>
   </div>
+  <!-- </div> -->
+
 </template>
 
 <script>
@@ -1163,6 +1170,10 @@ export default {
 
 
 <style lang="scss" scoped>
+.html{
+
+}
+
 .head-portrait {
   width: 50px;
   height: 50px;
@@ -1369,7 +1380,7 @@ textarea::-webkit-scrollbar-thumb {
           max-width: 90%;
           padding: 15px;
           // max-width: 650px;
-          border-radius: 20px 20px 20px 5px;
+          border-radius: 20px 20px 20px 0px;
           min-height: 17px;
           background-color: #f1eff0;
         }
@@ -1435,8 +1446,8 @@ textarea::-webkit-scrollbar-thumb {
           max-width: 90%;
           min-height: 17px;
           padding: 15px;
-          border-radius: 20px 20px 5px 20px;
-          background-color: #3c46ff;
+          border-radius: 20px 20px 0px 20px;
+          background-color: dodgerblue;
           color: #ffffff;
           word-break: break-all;
         }
@@ -1535,7 +1546,7 @@ textarea::-webkit-scrollbar-thumb {
         width: 95%;
         height: 50px;
         // background-color: rgb(66, 70, 86);
-        border-radius: 15px;
+        border-radius: 10px;
         border: 2px solid #dcdcdc;
         padding: 12px;
         box-sizing: border-box;
@@ -1550,7 +1561,7 @@ textarea::-webkit-scrollbar-thumb {
       }
 
       .send {
-        background-color: #3c46ff;
+        background-color: dodgerblue;
         border-radius: 30px;
         width: 40px;
         height: 40px;
@@ -1578,7 +1589,7 @@ textarea::-webkit-scrollbar-thumb {
   margin-left: 2%;
   height: 4px;
   // background: linear-gradient(to right, red, yellow, green);
-  background: #3c46ff;
+  background: dodgerblue;
   animation: shrink-and-expand 2s ease-in-out infinite;
 }
 
@@ -1642,8 +1653,23 @@ textarea::-webkit-scrollbar-thumb {
     transform: scaleX(0);
   }
 }
-@media only screen and (min-width: 768px) {
-  // 当屏幕宽度大于或等于768px时
+// @media only screen and (min-width: 768px) {
+//   // 当屏幕宽度大于或等于768px时
+//   .chat-window {
+//     // margin-left: 20px;
+//     .botoom {
+//       padding: 20px;
+//     }
+//   }
+//   .chat-window {
+//     .botoom {
+//       .chatInputs {
+//         width: fill-available;
+//       }
+//     }
+//   }
+// }
+
   .chat-window {
     // margin-left: 20px;
     .botoom {
@@ -1657,5 +1683,4 @@ textarea::-webkit-scrollbar-thumb {
       }
     }
   }
-}
 </style>

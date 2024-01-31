@@ -20,20 +20,21 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  gap: 12px;
-  background-color: #3c46ff;
+  gap: 8px;
+  background-color: dodgerblue;
   padding: 0 20px;
 
   .name {
-    font-size: 16px;
-    font-weight: 600;
+font-family: 'TestSöhne';
+    font-size: 20px;
     color: #ffffff;
+    // letter-spacing: 110%;
   }
 }
 .status {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   z-index: 1;
   display: block;
   border-radius: 50%;

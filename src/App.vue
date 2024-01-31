@@ -42,7 +42,8 @@ export default {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'SSFY';
+  font-family: 'Inter';
+  font-weight: 500;
 }
 #app {
   width: 100vw;

@@ -73,8 +73,7 @@ main{
 .home {
   width: 100vw;
   height: 100vh;
-  // background-color: rgb(39, 42, 55);
-  background-color: #e6e4e9;
+  background-color: black;
   position: absolute;
   left: 50%;
   top: 50%;
