@@ -1,0 +1,31 @@
+name: Deploy Vue.js App
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: env
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build application
+        env:
+          VUE_APP_OPENAI_API_KEY: ${{ secrets.TESTSEC }}
+        run: npm run build
+
+      - name: Deploy
+        run: echo "Deployment step here"
